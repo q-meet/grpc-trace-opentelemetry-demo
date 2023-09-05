@@ -53,15 +53,27 @@ message HelloResponse {
 ```
 go run main.go
 
-2019/07/28 17:58:13 Hello World
-2019/07/28 17:58:13 Hello World Reply 0
-2019/07/28 17:58:13 Hello World Reply 1
-2019/07/28 17:58:13 Hello World Reply 2
-2019/07/28 17:58:13 Hello World Reply 3
-2019/07/28 17:58:13 Hello World Reply 4
-2019/07/28 17:58:13 Hello World Reply 5
-2019/07/28 17:58:13 Hello World Reply 6
-2019/07/28 17:58:13 Hello World Reply 7
-2019/07/28 17:58:13 Hello World Reply 8
-2019/07/28 17:58:13 Hello World Reply 9
+----------------
+----------------traceIdStr: 00748bd593870f8202f660f54a880a37 <nil>
+----------------spanIDStr: 3e1fe2f095a57398 <nil>
+----------------
+2023/09/06 00:37:53 Hello World
+2023/09/06 00:37:53 Hello World Reply 0
+2023/09/06 00:37:53 Hello World Reply 1
+2023/09/06 00:37:53 Hello World Reply 2
+2023/09/06 00:37:53 Hello World Reply 3
+2023/09/06 00:37:53 Hello World Reply 4
+2023/09/06 00:37:53 Hello World Reply 5
+2023/09/06 00:37:53 Hello World Reply 6
+2023/09/06 00:37:53 Hello World Reply 7
+2023/09/06 00:37:53 Hello World Reply 8
+2023/09/06 00:37:53 Hello World Reply 9
+
+
+
+server:
+---------------
+map[:authority:0.0.0.0:9090 content-type:application/grpc traceparent:00-00748bd593870f8202f660f54a880a37-3e1fe2f095a57398-01 tracestate:foo=bar user-agent:grpc-go/1.57.0 xxx:222]
+---------------
+
 ```
